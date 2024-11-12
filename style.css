@@ -4,7 +4,7 @@
 }
 
 body {
-    background: white ;
+    background: white;
     font-family: "Mona Sans", sans-serif;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background: black;
+    background: orange;
     font-size: 20px;
     padding: 0 20px 0 0;
     display: block;
@@ -48,7 +48,7 @@ body {
 }
 
 .topnav .split:hover {
-    color: yellow;
+    color: blue;
 }
 
 .icon {
@@ -78,8 +78,71 @@ body {
 }
 
 .footer {
-    background: brown;
+    background: orangered;
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    color: #fff;
+}
+
+.footer-address {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-address p {
+    text-align: left;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.footer-address p:hover {
+    color: black;
+}
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #fff; */
+    flex: 1;
+}
+
+.footer-about a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+.footer-about a:hover {
+    color: black;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid #fff; */
+    justify-content: space-evenly;
+    /* width: 250px; */
+    font-size: 30px;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-icon i {
+    cursor: pointer;
+}
+
+.footer-icon i:hover {
+    color: black;
+}
+
+.copyright {
+    background: #d8dbbd;
+    text-align: center;
+    padding: 10px;
 }
 
 .header_content {
@@ -115,17 +178,17 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: auto;
+    margin: 0 30px;
     text-align: center;
     font-family: arial;
-  }
-  
-  .price {
-    color: white ;
+}
+
+.price {
+    color: white;
     font-size: 22px;
-  }
-  
-  .card button {
+}
+
+.card button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -135,15 +198,31 @@ body {
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-  }
-  
-  .card button:hover {
-    opacity: 0.7;
-  }
+}
 
-.item-meo {
+.card button:hover {
+    opacity: 0.7;
+}
+
+.item-thuc-an-meo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
+}
+
+legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    color: orange;
+}
+
+fieldset {
+    padding: 20px;
+    width: 85%;
+    justify-self: center;
+    margin: 15px;
+    border-color: orange;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px #d8dbbd;
 }
